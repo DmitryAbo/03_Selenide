@@ -56,7 +56,7 @@ public class CallbackTest {
     @Test
     public void shouldValidNameInvalidPhone() {
         open("http://localhost:9999/");
-        $(By.cssSelector(".input__control[type=\"text\"]")).setValue("!Дмитрий");
+        $(By.cssSelector(".input__control[type=\"text\"]")).setValue("Дмитрий");
         $(By.cssSelector(".input__control[type=\"tel\"]")).setValue("+79155Д377834");
         $(By.cssSelector("[data-test-id=\"agreement\"]")).click();
         $(By.cssSelector("button")).click();
