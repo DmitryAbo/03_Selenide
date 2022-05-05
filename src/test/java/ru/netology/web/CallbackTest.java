@@ -87,7 +87,7 @@ public class CallbackTest {
     }
 
     @Test
-    public void shouldNullNameInvalidPhoneCheckBoxTrue() {
+    public void shouldNullNameValidPhoneCheckBoxTrue() {
         $(By.cssSelector(".input__control[type=\"text\"]")).setValue("");
         $(By.cssSelector(".input__control[type=\"tel\"]")).setValue("+79155377834");
         $(By.cssSelector("[data-test-id=\"agreement\"]")).click();
